@@ -1,11 +1,12 @@
-import Header from "./components/Header.jsx";
-import ListMayor from "./components/ListMayor.jsx";
-import ListV from "./components/ListV.jsx";
+import { Outlet } from "react-router-dom";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <h1>Sistema Eleitoral MX</h1>
+      <Home />
+      <Outlet />
     </div>
   );
 }
