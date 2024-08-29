@@ -1,19 +1,15 @@
 import React, { useState } from "react";
 
-function ListMayor() {
-  const [SMayor, setSMayor] = useState("");
+function ListChapa() {
+  const [SChapa, setSChapa] = useState("");
   const [Sucess, setSucess] = useState(false);
 
-  const mayors = [
-    { name: "Rafa Greca", type: "prefeito" },
-    { name: "Requião", type: "prefeito" },
-    { name: "Ney Leprevot", type: "prefeito" },
-  ];
+  let Chapas = [];
 
   function handleVote(event) {
     if (SMayor) {
       event.currentTarget.disabled = true;
-      console.log(`+1 voto: ${SMayor}`);
+      console.log(`+1 voto: ${SChapa}`);
       setSucess(true);
     } else {
       alert("Escolha um candidato");
@@ -23,19 +19,19 @@ function ListMayor() {
   return (
     <>
       <h2>
-        <strong>Vote no seu candidato a prefeito! *example*</strong>
+        <strong>Vote no seu candidato a prefeito!</strong>
       </h2>
 
       <div>
         <ul className="list-poli">
-          {mayors.map((item, index) => (
+          {Chapas.map((item, index) => (
             <li key={index}>
               <input
                 type="radio"
                 id={`radio-prefeito-${index}`}
                 name="politician"
                 value={item.name}
-                onChange={() => setSMayor(item.name)}
+                onChange={() => setSChapa(item.name)}
               />
               <label htmlFor={`radio-prefeito-${index}`}>{item.name}</label>
             </li>
@@ -51,4 +47,4 @@ function ListMayor() {
   );
 }
 
-export default ListMayor;
+export default ListChapa;

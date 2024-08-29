@@ -8,9 +8,6 @@ function Home() {
       <p>
         <Link to="/prefeitura">Prefeitura</Link>
       </p>
-      <p>
-        <Link to="/vereadores">Câmara dos Vereadores</Link>
-      </p>
     </>
   );
 }

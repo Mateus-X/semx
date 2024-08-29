@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ListMayor from "./components/ListMayor";
-import ListV from "./components/ListV";
 import ErrorPage from "./components/ErrorPage";
 
 const router = createBrowserRouter([
@@ -15,10 +14,6 @@ const router = createBrowserRouter([
       {
         path: "prefeitura",
         element: <ListMayor />,
-      },
-      {
-        path: "vereadores",
-        element: <ListV />,
       },
     ],
   },

@@ -2,10 +2,11 @@
 
 # Sistema Eleitoral Mateus Xavier
 
-Sistema que reúne as votações atuais de:
+Sistema que cria eleições virtuais
 
-- Vereadores
-- Prefeitos
+Requer: MySQL
+user: 'voting'
+senha: ''
 
 # Signo-Tech
 
