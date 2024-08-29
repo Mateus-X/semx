@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function ListChapa() {
+function ListTemplate() {
   const [SChapa, setSChapa] = useState("");
   const [Sucess, setSucess] = useState(false);
 
@@ -10,6 +10,7 @@ function ListChapa() {
     if (SMayor) {
       event.currentTarget.disabled = true;
       console.log(`+1 voto: ${SChapa}`);
+      alert("Voto computado!");
       setSucess(true);
     } else {
       alert("Escolha um candidato");
@@ -47,4 +48,4 @@ function ListChapa() {
   );
 }
 
-export default ListChapa;
+export default ListTemplate;

@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ListMayor from "./components/ListMayor";
 import ErrorPage from "./components/ErrorPage";
+import CreateList from "./components/CreateList";
+import CurrentLists from "./components/CurrentLists";
 
 const router = createBrowserRouter([
   {
@@ -12,8 +13,12 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "prefeitura",
-        element: <ListMayor />,
+        path: "create_vote",
+        element: <CreateList />,
+      },
+      {
+        path: "current_votings",
+        element: <CurrentLists />,
       },
     ],
   },

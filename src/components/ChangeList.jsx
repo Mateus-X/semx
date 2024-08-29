@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function CreateList() {
+function ChangeList() {
   const [title, setTitle] = useState("");
   const [begindate, setBeginDate] = useState("");
   const [fdate, setEndDate] = useState("");
@@ -19,7 +19,7 @@ function CreateList() {
         chapas: chapa,
       };
 
-      fetch("http://localhost:5000/endpoint", {
+      fetch("http://localhost:5000", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -101,4 +101,4 @@ function CreateList() {
   );
 }
 
-export default CreateList;
+export default ChangeList;

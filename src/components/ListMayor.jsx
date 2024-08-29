@@ -3,6 +3,8 @@ import React, { useState } from "react";
 function ListMayor() {
   const [SMayor, setSMayor] = useState("");
   const [Sucess, setSucess] = useState(false);
+  const [begindate, sbegindate] = useState("");
+  const [fdate, sfdate] = useState("");
 
   const mayors = [
     { name: "Rafa Greca", type: "prefeito" },
@@ -23,9 +25,11 @@ function ListMayor() {
   return (
     <>
       <h2>
-        <strong>Vote no seu candidato a prefeito! *example*</strong>
+        <strong>Vote no seu candidato a prefeito! *exemplo sem backend*</strong>
       </h2>
-
+      <h3>
+        Data de começo: {begindate}. Data de término:{fdate}
+      </h3>
       <div>
         <ul className="list-poli">
           {mayors.map((item, index) => (
