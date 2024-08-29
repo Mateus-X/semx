@@ -2,11 +2,13 @@
 
 # Sistema Eleitoral Mateus Xavier
 
-Sistema que cria eleições virtuais
+Sistema de gerenciamentos de enquetes com React, NodeJS, Express e MySQL. 
 
-Requer: MySQL
-user: 'voting'
-senha: ''
+Último commit antes do envio. 
+TODO: Consertar os erros de fetch no banco de dados, puxar os dados
+    para o ListTemplate e configurar os statements para criar as enquetes, configurar as datas de inicio e fim
+    para bloquear a enquete, terminar a adição do crud completo com possibilidade de remoção e edição de enquetes, 
+    terminar estilização com CSS Bootstrap.
 
 # Signo-Tech
 
